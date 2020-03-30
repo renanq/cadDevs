@@ -1,0 +1,108 @@
+- PARTE API
+-----------
+
+- Instalação do Node.js (Gerenciador de Pacotes Chocolatey)
+choco install node.js-lts
+
+- instalar o Yarn (melhor que o NPM que vem no Node)
+para instalar pacotes e bibliotecas na aplicação
+choco install yarn
+
+- Criar projeto Backend no Node.js
+abre a pasta (ex: backend)
+Yarn init -y ou npm init -y
+
+- Abre o Visual Studio Code na pasta corrente
+code .
+
+- Instalar dependecia do Express (framework)
+yarn add express
+
+- Instalar dependencia Axios (biblioteca do axios para fazer requisições ajax)
+yarn add axios
+
+- Instalar dependencia Mongoose para utilizar o Mongo DB
+yarn add mongoose
+
+- Instalar dependencia de desenvolvimento Nodemon (que monitora as atualizações na aplicação, reiniciando auto)
+yarn add nodemon -D
+para executar digita: yarn nodemon index.js
+criar no package.json o script abaixo para reiniciar nesse arquivo:
+ "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+startar o script digitando:
+yarn dev
+
+- PARTE WEB
+-----------
+
+- comando pra criar o projeto e dependencias no react
+yarn create react-app web
+
+sem yarn digita: npx create-react-app web
+
+- Comando para startar o projeto
+yarn start
+
+
+- Conceito React (escreve em JSX)
+ - Componente
+   Função que retorna algum conteúdo (HTML, CSS, js)
+   Bloco isolado de HTML, CSS e JS, o qual não interfere no restante da aplicação
+
+ - Estado
+   informações mantidas pelo componente (imutabilidade)
+
+ - Propriedade
+   é um atributo de um componente, informações de um componente
+
+
+- extensão cors, pra liberar acesso de um endereço externo na api
+yarn add cors
+
+
+- PARTE APP - REACT NATIVE
+--------------------------
+
+- intalação Expo
+yarn global add expo-cli
+
+- criando o projeto mobile
+expo init mobile
+
+- iniciando o projeto
+yarn start
+
+- Abre Expo no celular e scaneia o codigo
+- Abre o projeto no visual studio code
+
+- Adicionar ferramenta (extensão) de navegação
+yarn add react-navigation
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context
+
+-navegação nas paginas (por pilha - clica e abre a pagina)
+yarn add react-navigation-stack
+yarn add @react-native-community/masked-view
+
+- instalar extensão para mapas
+expo install react-native-maps
+
+- instalar localização do user
+expo install expo-location
+
+- instalar webview
+expo install react-native-webview
+
+- REAL TIME
+-----------
+
+- backend
+instalar dependencia protocolo web socket
+yarn add socket.io
+
+- aplicativo mobile
+yarn add socket.io-client
+
+
+
